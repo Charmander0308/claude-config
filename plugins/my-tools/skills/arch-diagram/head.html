@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{TITLE}}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@400;600&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #f6f7f9;
+  --panel: #ffffff;
+  --fg: #1c2330;
+  --muted: #5d6878;
+  --line: #9aa4b2;
+  --accent: #1f62b5;
+  --vm: #eef2f8;
+  --warn: #b54708;
+  --font-body: "IBM Plex Sans KR", "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, monospace;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #141820; --panel: #1c222d; --fg: #e4e8ee; --muted: #9aa5b5;
+    --line: #5f6b7c; --accent: #7cb4ff; --vm: #181e28; --warn: #f0a35e; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #141820; --panel: #1c222d; --fg: #e4e8ee; --muted: #9aa5b5;
+  --line: #5f6b7c; --accent: #7cb4ff; --vm: #181e28; --warn: #f0a35e; color-scheme: dark;
+}
+html, body { margin: 0; background: var(--bg); color: var(--fg); font-family: var(--font-body); }
+main { max-width: 1320px; margin: 0 auto; padding: 24px 16px 32px; display: grid; gap: 12px; }
+h1 { font-size: 20px; font-weight: 600; margin: 0; text-wrap: balance; }
+.sub { margin: 0; color: var(--muted); font-size: 13px; }
+figure { margin: 0; display: grid; gap: 10px; }
+.scroll { overflow-x: auto; }
+svg { width: 100%; min-width: 980px; height: auto; display: block; font-family: var(--font-body); }
+figcaption { color: var(--muted); font-size: 13px; }
+.legend { display: flex; flex-wrap: wrap; gap: 20px; font-size: 13px; color: var(--muted); }
+.legend span { display: inline-flex; align-items: center; gap: 8px; }
+.legend i { display: inline-block; width: 28px; border-top: 2px solid var(--line); }
+.legend i.d { border-top-style: dashed; }
+.legend i.a { border-top-color: var(--accent); }
+
+.box { fill: var(--panel); stroke: var(--line); stroke-width: 1.2; }
+.box.plan { stroke-dasharray: 6 4; }
+.vm { fill: var(--vm); stroke: var(--fg); stroke-width: 1.4; }
+.group { fill: none; stroke: var(--line); stroke-width: 1.2; stroke-dasharray: 2 3; }
+.pill { fill: var(--panel); stroke: var(--accent); stroke-width: 1.2; }
+.chip { fill: var(--bg); stroke: var(--muted); stroke-width: 1; }
+text { fill: var(--fg); font-size: 12px; }
+.t { font-weight: 600; font-size: 13px; }
+.h { font-weight: 600; font-size: 14px; }
+.m { fill: var(--muted); }
+.s { font-size: 11px; fill: var(--muted); }
+.mono { font-family: var(--font-mono); font-size: 11.5px; }
+.ln { fill: none; stroke: var(--line); stroke-width: 1.5; }
+.ln.d { stroke-dasharray: 6 4; }
+.ln.a { stroke: var(--accent); stroke-width: 2; }
+.head { fill: var(--line); }
+.head.a { fill: var(--accent); }
+.sa { fill: var(--accent); font-size: 11px; }
+.ln.w { stroke: var(--warn); stroke-dasharray: 5 3; }
+.head.w { fill: var(--warn); }
+.sw { fill: var(--warn); font-size: 11px; }
+.pill.w { stroke: var(--warn); stroke-dasharray: 5 3; }
+.cl { fill: var(--vm); stroke: var(--fg); stroke-width: 1.4; }
+.legend i.w { border-top: 2px dashed var(--warn); }
+.tags circle { fill: var(--accent); stroke: var(--bg); stroke-width: 2; }
+.tags text { fill: var(--bg); font-size: 11px; font-weight: 600; text-anchor: middle; font-variant-numeric: tabular-nums; }
+</style>
+</head>
+<body>
