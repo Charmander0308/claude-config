@@ -13,12 +13,21 @@ claude plugin install my-tools@my-claude
 
 ## 업데이트
 
-스킬을 고치면 `plugins/my-tools/.claude-plugin/plugin.json`의 `version`을 올려 푸시한다. 각 PC에서:
+스킬을 고치면 `plugins/my-tools/.claude-plugin/plugin.json`의 `version`을 올려 푸시한다. 각 PC에서 아래 중 하나로 받는다.
+
+터미널에서:
 
 ```bash
 claude plugin marketplace update my-claude
 claude plugin update my-tools@my-claude
 ```
+
+Claude Code 채팅창에서:
+
+- `/plugin` → **Marketplaces** 탭 → `my-claude` → **Update marketplace** (목록 갱신과 설치된 플러그인 업데이트를 한 번에 한다)
+- 또는 `!`를 붙여 셸 명령으로: `! claude plugin marketplace update my-claude && claude plugin update my-tools@my-claude`
+
+새 버전은 다음 세션부터 적용된다. 지금 세션에 바로 적용하려면 `/reload-plugins`를 실행한다.
 
 ## 들어 있는 스킬
 
