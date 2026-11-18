@@ -23,3 +23,7 @@ claude plugin update my-tools@my-claude
 ## 들어 있는 스킬
 
 - `arch-diagram`: 시스템·배포 아키텍처 구조도를 한 장짜리 HTML(SVG)로 그린다
+
+## 작업 규칙
+
+`plugins/my-tools/rules.md`는 세션이 시작될 때 훅(`hooks/hooks.json`)으로 자동으로 들어간다.
