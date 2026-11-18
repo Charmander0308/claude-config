@@ -23,6 +23,7 @@ claude plugin update my-tools@my-claude
 ## 들어 있는 스킬
 
 - `arch-diagram`: 시스템·배포 아키텍처 구조도를 한 장짜리 HTML(SVG)로 그린다
+- `notion-doc`: 도구·서비스·글을 조사해 노션 정리 문서를 정해진 양식으로 만든다
 
 ## 작업 규칙
 
